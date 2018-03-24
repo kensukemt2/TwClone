@@ -1,0 +1,2 @@
+class TwClonesController < ApplicationController
+end
