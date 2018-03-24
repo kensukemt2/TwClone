@@ -1,0 +1,12 @@
+<h3>この内容でつぶやきます</h3>
+
+<%= form_with(model: @twclone, url: tw_clones_path,local: true) do |form| %>
+  <%= form.hidden_field :content %>
+  <%= @twclone.content %>
+  <%= form.submit "登録する" %>
+<% end %>
+
+<%= form_with(model: @twclone, url: new_twclone_path,local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>
