@@ -1,8 +1,8 @@
 class TwClone < ApplicationRecord
   #validates :content, presence: true, length: {maximum: 140, message: "１４０文字以内で入力してください"}
-  validates :tw_error
+  validates :add_error_tw
 
-  def tw_error
+  def add_error_tw
     if content.blank?
       errors[:base] << "つぶやきは空ではできません！！"
     end
