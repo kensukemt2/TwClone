@@ -9,11 +9,11 @@
   <table class="tweet_list">
       <% @twclones.each do |tw| %>
         <tr>
-          <td colspan="2"><%= tw.content %></td>
+          <td colspan="2"class="tweet_content"><%= tw.content %></td>
         </tr>
         <tr>
-          <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id) %></td>
-          <td><%= link_to 'つぶやきを破棄する', tw_clone_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" } %></td>
+          <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id), type: "button", class: "btn btn-info" %></td>
+          <td><%= link_to 'つぶやきを破棄する', tw_clone_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" },type: "button",class:="btn btn-danger" %></td>
         </tr>
       <% end %>
   </table>
