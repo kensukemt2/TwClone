@@ -6,10 +6,10 @@
 
   <h1>つぶやき一覧</h1>
 
-  <table>
+  <table class="tweet_list">
     <tbody>
       <% @twclones.each do |tw| %>
-        <tr class="tw_list">
+        <tr>
           <td><%= tw.content %></td>
         </tr>
         <tr class="tw_edit">
