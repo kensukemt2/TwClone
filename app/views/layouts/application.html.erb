@@ -26,9 +26,9 @@
             </div>
             <div id="gnavi" class="collapse navbar-collapse">
               <ul>
-                <%= link_to image_tag('HOME_GREY.png'), root_path %>
-                <%= link_to image_tag('message_gray.png'), new_tw_clone_path %>
-                <%= link_to image_tag('moment_glay.png'), tw_clones_path %>
+                <%= link_to image_tag('HOME_GREY.png', class: "img-responsive",:mouseover: "HOME_BLUE.png"), root_path %>
+                <%= link_to image_tag('message_gray.png' class: "img-responsive",mouseover: "message_blue.png"), new_tw_clone_path %>
+                <%= link_to image_tag('moment_glay.png' class: "img-responsive",mouseover: "moment_blue.png"), tw_clones_path %>
               </ul>
             </div>
           </div>
@@ -40,7 +40,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="text-muted">© 2015-2016 Copyright DIVE INTO CODE Corp.</p>
+      <p class="text-muted">© 2017-2018 Copyright Kensuke Matsumoto</p>
     </div>
   </footer>
   </body>

@@ -48,7 +48,7 @@ class TwClonesController < ApplicationController
 
   private
   def tw_params
-    params.require(:twclone).permit(:content)
+    params.require(:tw_clone).permit(:content)
   end
   def set_tw
     @twclone = TwClone.new(params[:id])
