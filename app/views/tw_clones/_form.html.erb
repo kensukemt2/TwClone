@@ -1,5 +1,5 @@
 <%= form_with(model: @twclone,url: choose_new_or_edit, local: true) do |form| %>
-  <% if @twclone.errors.any?
+  <% if @twclone.errors.any? %>
     <div id="error_explanation">
       <h2><%= @twclone.count %>件のエラーがあります。</h2>
       <ul>
