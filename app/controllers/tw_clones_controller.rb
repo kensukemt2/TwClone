@@ -1,5 +1,5 @@
 class TwClonesController < ApplicationController
-  before_action :set_tw, only[:edit, :update]
+  before_action :set_tw, only: [:edit, :update]
   def top
   end
 
@@ -44,7 +44,8 @@ class TwClonesController < ApplicationController
     @twclone = TwClone.new(tw_params)
     render :new if @twclone.invalid?
   end
-  
+
+
   private
   def tw_params
     params.require(:twclone).permit(:content)
