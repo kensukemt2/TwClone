@@ -11,6 +11,10 @@ body {
 ul{
   list-style: none;
 }
+img {
+  max-width: 100%;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -43,9 +47,7 @@ ul{
   width: 100%;
   height: auto;
 }
-img {
-  max-width: 100%;
-}
+
 
 .grid-img {
   position: relative;
@@ -79,4 +81,7 @@ img {
 }
 .top_img img{
   height: 30px;
+}
+#error_explanation{
+  font-size: 3rem;
 }
