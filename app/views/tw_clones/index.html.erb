@@ -10,7 +10,7 @@
   <tbody>
     <% @twclones.each do |tw| %>
       <tr class="tw_list">
-        <td><%= blog.content %></td>
+        <td><%= tw.content %></td>
       </tr>
       <tr class="tw_edit">
         <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id) %></td>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'ブログ作成画面へ', new_blog_path %>
+<%= link_to 'ブログ作成画面へ', new_tw_clone_path %>
