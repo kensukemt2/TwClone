@@ -26,9 +26,28 @@
             </div>
             <div id="gnavi" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
-                <li><%= link_to "ホーム", root_path %></li>
+                <!-- <li><%= link_to "ホーム", root_path %></li>
                 <li><%= link_to "新しいつぶやき", new_tw_clone_path %></li>
-                <li><%= link_to "つぶやき一覧", tw_clones_path %></li>
+                <li><%= link_to "つぶやき一覧", tw_clones_path %></li> -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 grid-img">
+
+                        <%= link_to image_tag('HOME_GREY.png'), root_path %>
+
+                    </div>
+                    <div class="col-md-4 grid-img">
+
+                        <%= link_to image_tag('message_gray.png'), new_tw_clone_path  %>
+
+                    </div>
+                    <div class="col-md-4 grid-img">
+
+                        <%= link_to image_tag('moment_glay.png'), tw_clones_path %>
+
+                    </div>
+                  </div>
+                </div>
               </ul>
             </div>
           </div>
