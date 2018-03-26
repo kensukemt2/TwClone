@@ -14,7 +14,7 @@
       </tr>
       <tr class="tw_edit">
         <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id) %></td>
-        <td><%= link_to 'つぶやきを破棄する', tw_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" } %></td>
+        <td><%= link_to 'つぶやきを破棄する', tw_clone_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" } %></td>
       </tr>
     <% end %>
   </tbody>

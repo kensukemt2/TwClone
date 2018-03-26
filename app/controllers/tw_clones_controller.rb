@@ -37,7 +37,7 @@ class TwClonesController < ApplicationController
   end
 
   def destroy
-    TwClone.destroy
+    @twclone.destroy
     redirect_to tw_clones_path, notice:"つぶやきを削除しました！！"
   end
 
