@@ -3,7 +3,7 @@ module TwClonesHelper
     if action_name =='new' || action_name == 'confirm'
       confirm_tw_clones_path
     elsif action_name == 'edit'
-      tw_clones_path
+      tw_clone_path
     end
   end
 end
