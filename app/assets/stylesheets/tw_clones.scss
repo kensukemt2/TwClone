@@ -30,6 +30,18 @@ body {
 .main-header img{
   height: 280px;
 }
+img {
+  max-width: 100%;
+}
+
+.grid-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-img img {
+  position: absolute;
+}
 // .img-home{
 //   background-image: url("HOME_BLUE.png");
 // }
