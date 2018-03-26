@@ -6,8 +6,8 @@ class TwClone < ApplicationRecord
     if content.blank?
       errors[:base] << "つぶやきは空ではできません！！"
     end
-    if content.length >140
-      errors[:base] << "１４０文字以内で入力してください"
-    end
+    # if content.length >140
+    #   errors[:base] << "１４０文字以内で入力してください"
+    # end
   end
 end
