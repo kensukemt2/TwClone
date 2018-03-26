@@ -4,7 +4,7 @@ class TwClone < ApplicationRecord
 
   def add_error_tw
     if content.blank?
-      errors[:base] << "つぶやきは空ではできません！！"
+      errors[:content] << "つぶやきは空ではできません！！"
     end
     # if content.length >140
     #   errors[:base] << "１４０文字以内で入力してください"
