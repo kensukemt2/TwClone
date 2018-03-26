@@ -1,19 +1,21 @@
-<%= form_with(model: @twclone,url: choose_new_or_edit, local: true) do |form| %>
-  <% if @twclone.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= @twclone.errors.count %>件のエラーがあります。</h2>
-      <ul>
-        <% @twclone.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<div class="article">
+  <%= form_with(model: @twclone,url: choose_new_or_edit, local: true) do |form| %>
+    <% if @twclone.errors.any? %>
+      <div class="bg-danger" id="error_explanation">
+        <h2><%= @twclone.errors.count %>件のエラーがあります。</h2>
+        <ul>
+          <% @twclone.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
 
-  <div class="tw_new">
-    つぶやき：
-    <%= form.text_field :content %>
-  </div>
-  <%= form.submit "登録" %>
-<% end %>
-<%= link_to "つぶやき一覧に戻る", tw_clones_path %>
+    <div class="tw_new">
+      つぶやき：
+      <%= form.text_field :content %>
+    </div>
+    <%= form.submit "登録" %>
+  <% end %>
+  <%= link_to "つぶやき一覧に戻る", tw_clones_path %>
+</div>
