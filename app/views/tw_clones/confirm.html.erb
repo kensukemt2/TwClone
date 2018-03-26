@@ -2,7 +2,7 @@
 
 <%= form_with(model: @twclone, url: tw_clones_path,local: true) do |form| %>
   <%= form.hidden_field :content %>
-  <%= @twclone.content %>
+  <%= @twclone.content %><br>
   <%= form.submit "登録する" %>
 <% end %>
 

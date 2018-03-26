@@ -19,7 +19,7 @@ class TwClonesController < ApplicationController
   def create
     @twclone = TwClone.new(tw_params)
     if @twclone.save
-      redirect_to new_twclone_path, notice: "つぶやきを投稿しました！！"
+      redirect_to new_tw_clone_path, notice: "つぶやきを投稿しました！！"
     else
       render 'new'
     end
