@@ -28,10 +28,11 @@ body {
   width: 100%;
 }
 .main-header img{
-  height: 280px;
+  height: 20%;
+  width: 100%;
 }
 img {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .grid-img {
@@ -42,6 +43,7 @@ img {
 
 .grid-img img {
   position: absolute;
+  max-width: 50%;
 }
 // .img-home{
 //   background-image: url("HOME_BLUE.png");
