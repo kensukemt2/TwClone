@@ -39,6 +39,10 @@ body {
 .img-home a:hover{
   visibility: hidden;
 }
+.img-home img{
+  width: 50%;
+  height: auto;
+}
 .img-new{
   background-image: url("message_blue.png")
 }
@@ -49,6 +53,10 @@ body {
 .img-new a:hover img{
   visibility: hidden;
 }
+img-new img{
+  width: 50%;
+  height: auto;
+}
 .img-moment{
   background-image: url("moment_blue.png");
 }
@@ -57,4 +65,8 @@ body {
 }
 .img-moment a:hover{
   visibility: hidden;
+}
+.img-moment img{
+  width: 50%;
+  height: auto;
 }
