@@ -8,4 +8,16 @@
     <p>ブログの新規作成とブログの一覧画面から編集削除などができます</p>
   </section>
 </div>
-<%= link_to image_tag('HOME_GREY.png', {:class => "img-responsive",:mouseover => "HOME_BLUE.png"}), root_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to image_tag('HOME_GREY.png', {:class => "img-responsive",:mouseover => "HOME_BLUE.png"}), root_path %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to image_tag('message_gray.png', {:class => "img-responsive",:mouseover => "message_blue.png"}), new_tw_clone_path %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to image_tag('moment_glay.png', {:class => "img-responsive",:mouseover => "moment_blue.png"}), tw_clones_path %>
+    </div>
+  </div>
+</div>
