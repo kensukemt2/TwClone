@@ -30,9 +30,9 @@
                 <li><%= link_to "新しいつぶやき", new_tw_clone_path %></li>
                 <li><%= link_to "つぶやき一覧", tw_clones_path %></li> -->
 
-                <li class="top_img"><%= link_to image_tag('HOME_GREY.png',{:onmouseover => "HOME_BLUE.png",:onmouseout => "HOME_GREY.png"}), root_path %></li>
-                <li class="top_img"><%= link_to image_tag('message_gray.png',{:onmouseover => "message_blue.png",:onmouseout => "message_gray.png"}), new_tw_clone_path  %></li>
-                <li class="top_img"><%= link_to image_tag('moment_glay.png',{:onmouseover => "moment_blue.png",:onmouseout => "moment_glay.png"}), tw_clones_path %></li>
+                <li class="top_img"><%= link_to image_tag('HOME_GREY.png',{:onmouseover => "this.src='HOME_BLUE.png'",:onmouseout => "this.src='HOME_GREY.png'"}), root_path %></li>
+                <li class="top_img"><%= link_to image_tag('message_gray.png',{:onmouseover => "this.src='message_blue.png'",:onmouseout => "this.src='message_gray.png'"}), new_tw_clone_path  %></li>
+                <li class="top_img"><%= link_to image_tag('moment_glay.png',{:onmouseover => "this.src='moment_blue.png'",:onmouseout => "this.src='moment_glay.png'"}), tw_clones_path %></li>
               </ul>
             </div>
           </div>
