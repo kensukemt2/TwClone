@@ -27,3 +27,31 @@ body {
 .main-header{
   width: 100%;
 }
+.img-home{
+  background-image: url(../images/HOME_BLUE.png);
+}
+.img-home a{
+  display: inline-block;
+}
+.img-home a:hover{
+  visibility: hidden;
+}
+.img-new{
+  background-image: url("../images/message_blue.png")
+}
+.img-new a{
+  display: inline-block;
+
+}
+.img-new a:hover img{
+  visibility: hidden;
+}
+.img-moment{
+  background-image: url(../images/moment_blue.png);
+}
+.img-moment a{
+  display: inline-block;
+}
+.img-moment a:hover{
+  visibility: hidden;
+}
