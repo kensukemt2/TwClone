@@ -1,6 +1,6 @@
 class TwClonesController < ApplicationController
-  before_action :set_tw, only: [:edit, :update]
-  before_action :tw_params,only: [:new, :edit, :confim]
+  before_action :set_tw, only: [:edit, :update, :destroy]
+
   def top
   end
 
@@ -29,15 +29,15 @@ class TwClonesController < ApplicationController
   end
   def update
 
-    if @twclone.save
-      redirect_to tw_clones_path, notice: "つぶやくを編集しました！！"
+    if @twclone.update(tw_params)
+      redirect_to tw_clones_path, notice: "つぶやきを編集しました！！"
     else
       render 'edit'
     end
   end
 
   def destroy
-    @TwClone.destroy
+    TwClone.destroy
     redirect_to tw_clones_path, notice:"つぶやきを削除しました！！"
   end
 
@@ -52,6 +52,6 @@ class TwClonesController < ApplicationController
     params.require(:tw_clone).permit(:content)
   end
   def set_tw
-    @twclone = TwClone.new(params[:id])
+    @twclone = TwClone.find(params[:id])
   end
 end
