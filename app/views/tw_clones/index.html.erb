@@ -7,20 +7,18 @@
   <h1>つぶやき一覧</h1>
 
   <table class="tweet_list">
-    <tbody>
       <% @twclones.each do |tw| %>
         <tr>
           <td><%= tw.content %></td>
         </tr>
-        <tr class="tw_edit">
+        <tr>
           <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id) %></td>
           <td><%= link_to 'つぶやきを破棄する', tw_clone_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" } %></td>
         </tr>
       <% end %>
-    </tbody>
   </table>
 
   <br>
 
-  <%= link_to 'ブログ作成画面へ', new_tw_clone_path %>
+  <%= link_to '新しくつぶやく', new_tw_clone_path %>
 </div>

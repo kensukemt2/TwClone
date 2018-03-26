@@ -65,4 +65,14 @@ img {
 }
 .tweet_list{
   text-align: center;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.tweet_list td{
+  padding:4px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
 }
