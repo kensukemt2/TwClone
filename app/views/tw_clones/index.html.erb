@@ -1,25 +1,26 @@
 <section class="main-header">
   <%= image_tag 'title.jpg' %>
 </section>
+<div class="article">
+  <p id="notice"><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
+  <h1>つぶやき一覧</h1>
 
-<h1>つぶやき一覧</h1>
+  <table>
+    <tbody>
+      <% @twclones.each do |tw| %>
+        <tr class="tw_list">
+          <td><%= tw.content %></td>
+        </tr>
+        <tr class="tw_edit">
+          <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id) %></td>
+          <td><%= link_to 'つぶやきを破棄する', tw_clone_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<table>
-  <tbody>
-    <% @twclones.each do |tw| %>
-      <tr class="tw_list">
-        <td><%= tw.content %></td>
-      </tr>
-      <tr class="tw_edit">
-        <td><%= link_to 'つぶやきを編集する', edit_tw_clone_path(tw.id) %></td>
-        <td><%= link_to 'つぶやきを破棄する', tw_clone_path(tw.id), method: :delete, data: { confirm: "本当に削除してよいですか" } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <br>
 
-<br>
-
-<%= link_to 'ブログ作成画面へ', new_tw_clone_path %>
+  <%= link_to 'ブログ作成画面へ', new_tw_clone_path %>
+</div>
