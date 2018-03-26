@@ -1,5 +1,6 @@
 class TwClonesController < ApplicationController
   before_action :set_tw, only: [:edit, :update]
+  before_action :tw_params,only: [:new, :edit, :confim]
   def top
   end
 
